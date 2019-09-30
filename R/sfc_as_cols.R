@@ -3,6 +3,8 @@
 #' Extract the coordinates from the data frame and create two new columns
 #' containing these coordinates.
 #'
+#' Function code from jmlondon in this thread: https://github.com/r-spatial/sf/issues/231
+#'
 #' @param x data frame containing an sf point geometry
 #' @param names character vector containing the names of the new columns to add
 #'

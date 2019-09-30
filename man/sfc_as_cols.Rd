@@ -18,6 +18,9 @@ data frame with the new columns added
 Extract the coordinates from the data frame and create two new columns
 containing these coordinates.
 }
+\details{
+Function code from jmlondon in this thread: https://github.com/r-spatial/sf/issues/231
+}
 \examples{
 library(sf)
 df <- data.frame(name = "ABR", lat = 64.912, lon = -147.932)
