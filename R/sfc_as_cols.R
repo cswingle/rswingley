@@ -9,7 +9,10 @@
 #' @return data frame with the new columns added
 #' @export
 #' @examples
-#' geometry_layer %>% sfc_as_cols(names = c("lon", "lat"))
+#' library(sf)
+#' df <- data.frame(name = "ABR", lat = 64.912, lon = -147.932)
+#' df <- st_as_sf(df, coords = c("lon", "lat"), crs = 4326)
+#' df <- sfc_as_cols(df, c("lon_wgs84", "lat_wgs84"))
 sfc_as_cols <- function(x, names = c("x", "y")) {
     stopifnot(inherits(x, "sf") && inherits(sf::st_geometry(x), "sfc_POINT"))
     ret <- sf::st_coordinates(x)
