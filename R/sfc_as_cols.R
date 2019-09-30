@@ -19,6 +19,6 @@ sfc_as_cols <- function(x, names = c("x", "y")) {
     ret <- tibble::as_tibble(ret)
     stopifnot(length(names) == ncol(ret))
     x <- x[ , !names(x) %in% names]
-    ret <- setNames(ret, names)
+    ret <- stats::setNames(ret, names)
     dplyr::bind_cols(x, ret)
 }
