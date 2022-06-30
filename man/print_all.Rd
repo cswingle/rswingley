@@ -15,7 +15,8 @@ print_all(x, ...)
 prints its argument and returns it _invisibly_.
 }
 \description{
-Wraps the `print()` function with `n = Inf`
+Wraps the `print()` function with `n = Inf` (which means it only works with
+tibbles).
 }
 \examples{
 print_all(tibble::as_tibble(mtcars))
