@@ -8,6 +8,8 @@ print_all(x, ...)
 }
 \arguments{
 \item{x}{is the object to print}
+
+\item{...}{arguments passed to `print()`}
 }
 \value{
 prints its argument and returns it _invisibly_.
@@ -16,5 +18,5 @@ prints its argument and returns it _invisibly_.
 Wraps the `print()` function with `n = Inf`
 }
 \examples{
-print_all(x, ...)
+print_all(tibble::as_tibble(mtcars))
 }
