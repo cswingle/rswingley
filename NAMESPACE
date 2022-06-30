@@ -3,6 +3,7 @@
 export(gz)
 export(min_to_hhmmss)
 export(min_to_mmss)
+export(print_all)
 export(sfc_as_cols)
 export(unique_str_agg)
 export(utmzone)
