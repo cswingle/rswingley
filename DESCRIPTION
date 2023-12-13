@@ -7,10 +7,10 @@ Authors@R:
            role = c("aut", "cre"),
            email = "cswingle@swingleydev.com")
 Description: This package includes a variety of functions I use all the time.
-License: CCBY-4.0
+License: CC BY 4.0
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.2.1
+RoxygenNote: 7.2.3
 Imports: 
     dplyr,
     sf,
