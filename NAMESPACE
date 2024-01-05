@@ -3,6 +3,7 @@
 export(gz)
 export(min_to_hhmmss)
 export(min_to_mmss)
+export(pg_wkb_as_sf)
 export(print_all)
 export(rename_geometry)
 export(sfc_as_cols)
