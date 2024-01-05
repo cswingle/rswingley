@@ -24,7 +24,7 @@ pg_wkb_as_sf <- function(x, geometry) {
   stopifnot(inherits(x, "data.frame"))
   dplyr::bind_cols(
     x,
-    wkb_geometry = sf::st_as_sfc(x[geometry], EKWT = TRUE)
+    wkb_geometry = sf::st_as_sfc(x[[geometry]], EKWT = TRUE)
   ) |>
     dplyr::select(-dplyr::any_of(geometry)) |>
     sf::st_as_sf()
