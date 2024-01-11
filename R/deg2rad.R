@@ -6,6 +6,6 @@
 #' @export
 #' @examples
 #' rad2deg(3.1415)
-deg2rad <- function(rad) {
+deg2rad <- function(deg) {
   return(deg * (pi / 180))
 }
