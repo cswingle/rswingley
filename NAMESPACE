@@ -2,6 +2,7 @@
 
 export(deg2rad)
 export(gz)
+export(link_path_original)
 export(min_to_hhmmss)
 export(min_to_mmss)
 export(pg_wkb_as_sf)

@@ -11,8 +11,9 @@ License: CC BY 4.0
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.2.3
-Imports: 
+Imports:
     dplyr,
     sf,
     tibble,
-    rlang
+    rlang,
+    fs
