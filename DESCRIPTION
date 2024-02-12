@@ -1,6 +1,6 @@
 Package: rswingley
 Title: Swingley Functions
-Version: 0.0.3
+Version: 0.1.1
 Authors@R: 
     person(given = "Christopher",
            family = "Swingley",
