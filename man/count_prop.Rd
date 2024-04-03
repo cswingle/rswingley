@@ -4,12 +4,12 @@
 \alias{count_prop}
 \title{Get grouped count and proportion}
 \usage{
-count_prop(x, var, sort = FALSE)
+count_prop(x, ..., sort = FALSE)
 }
 \arguments{
 \item{x}{A data frame, data frame extension (tibble), or a lazy data frame.}
 
-\item{var}{Variables to group by.}
+\item{...}{Variables to group by.}
 
 \item{sort}{If ‘TRUE’, will show the largest groups at the top.}
 }
