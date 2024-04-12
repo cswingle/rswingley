@@ -15,11 +15,11 @@
 percentile <- function(value, x, from = 0, to = 1, eps = 1e-06) {
   n <- 100
   breaks <- seq(from, to, length.out = n)
-  percentile <- stats::quantile(x, probs = breaks)
-  cutoff <- as.numeric(sub("%", "", names(percentile))) / 100
+  quantiles <- stats::quantile(x, probs = breaks)
+  cutoff <- as.numeric(sub("%", "", names(quantiles))) / 100
   for (i in seq(n)) {
-    if (value >= percentile[i]) from <- max(from, cutoff[i])
-    if (value <= percentile[i]) to <- min(to, cutoff[i])
+    if (value >= quantiles[i]) from <- max(from, cutoff[i])
+    if (value <= quantiles[i]) to <- min(to, cutoff[i])
   }
   if ((to - from) <= eps) {
     result <- mean(from, to) * 100
