@@ -9,6 +9,8 @@
 #' @param eps numeric. Threshold for calculating approximate value.
 #'
 #' @return numeric. Percentile position of value between [0, 100].
+#'
+#' @export
 #' @examples
 #' x <- runif(100) * 100
 #' percentile(25, x)
