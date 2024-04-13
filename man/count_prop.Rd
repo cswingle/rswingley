@@ -17,6 +17,9 @@ count_prop(x, ..., sort = FALSE)
 An object of the same type as `.data`
 }
 \description{
+Based on https://twitter.com/Diabb6/status/1571635146658402309
+}
+\details{
 Similar to `count`, but also includes a `prop` column with the
 proportion for each group.
 }
